@@ -1,0 +1,10 @@
+input UpdateInfoInput {
+  img: String!
+  name: UpdateTranslationInput!
+  job: String!
+  experience: UpdateTranslationInput!
+  telegramTitle: String!
+  telegramLink: String!
+  githubTitle: String!
+  githubLink: String!
+}

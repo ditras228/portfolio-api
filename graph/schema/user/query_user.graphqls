@@ -1,0 +1,13 @@
+type User {
+  id: Int!
+  login: String!
+  password: String!
+  accessToken: String!
+  roleId: Int!
+  role: Role!
+}
+
+type WrongPassword implements ServiceErrorInterface {
+  message: String!
+}
+union UserOutput = User | NotFoundError | WrongPassword

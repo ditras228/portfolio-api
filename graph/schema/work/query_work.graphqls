@@ -1,0 +1,9 @@
+type GetWork {
+  id: Int!
+  name: GetTranslations!
+  tags: [GetTag!]!
+  description: GetTranslations!
+  github: String!
+  demo: String!
+  figma: String!
+}

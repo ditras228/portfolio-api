@@ -1,0 +1,10 @@
+type GetTag {
+  id: Int!
+  title: String!
+}
+
+type GetWorkTag {
+  id: Int!
+  workId: Int!
+  tagId: Int!
+}

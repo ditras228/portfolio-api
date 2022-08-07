@@ -1,0 +1,29 @@
+input CreateWorkInput {
+  name: UpdateTranslationInput!
+  tags: [Int!]!
+  description: UpdateTranslationInput!
+  github: String!
+  demo: String!
+  figma: String
+}
+
+input UpdateWorkInput {
+  id: Int!
+  name: UpdateTranslationInput!
+  tags: [Int!]!
+  description: UpdateTranslationInput!
+  github: String!
+  demo: String!
+  figma: String
+}
+
+union UpdateWorkOutput = GetWork | NotFoundError
+
+input DeleteWorkInput {
+  id: Int!
+}
+
+type DeleteWorkResult {
+  id: Int!
+}
+union DeleteWorkOutput = DeleteWorkResult | NotFoundError

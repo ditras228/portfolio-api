@@ -1,0 +1,6 @@
+storage:
+  host: julepirnuk.beget.app
+  port: 5432
+  database: postgres
+  username: postgres
+  password: pM4*fJoS

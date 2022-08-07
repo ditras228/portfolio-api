@@ -1,0 +1,16 @@
+type GetInfo {
+  name: GetTranslations!
+  img: String!
+  job: String!
+  desc: [GetDesc!]!
+  experience: GetTranslations!
+  contacts: Contacts!
+}
+
+type Contacts {
+  telegramTitle: String!
+  telegramLink: String!
+
+  githubTitle: String!
+  githubLink: String!
+}

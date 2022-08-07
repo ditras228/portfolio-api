@@ -1,0 +1,42 @@
+type Query {
+  # Получить инфу
+  getInfo: GetInfo!
+
+  # Получить работы
+  getWorks: [GetWork]!
+
+  # Получить теги
+  getTags: [GetTag]!
+
+  # Получить описание
+  getDesc: [GetDesc]!
+
+  # Получить пользователя по id
+  getOneUser(id: Int!): User!
+}
+
+type Mutation {
+  # Логин
+  auth(input: UserInput!): UserOutput!
+
+  # Обновить инфу
+  updateInfo(input: UpdateInfoInput!): GetInfo! @hasRole(role: ADMIN)
+
+  # Создать работу
+  createWork(input: CreateWorkInput!): GetWork! @hasRole(role: ADMIN)
+
+  # Обновить работу
+  updateWork(input: UpdateWorkInput!): UpdateWorkOutput! @hasRole(role: ADMIN)
+
+  # Удалить работу
+  deleteWork(input: DeleteWorkInput!): DeleteWorkOutput! @hasRole(role: ADMIN)
+
+  # Обновить описание
+  updateDesc(input: UpdateDescInput!): UpdateDescOutput! @hasRole(role: ADMIN)
+
+  # Создать описание
+  createDesc(input: CreateDescInput!): CreateDescOutput! @hasRole(role: ADMIN)
+
+  # Удалить описание
+  deleteDesc(input: DeleteDescInput!): DeleteDescOutput! @hasRole(role: ADMIN)
+}

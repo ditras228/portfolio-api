@@ -1,0 +1,9 @@
+type GetDesc {
+  id: Int!
+  text: GetTranslations!
+  img: String!
+}
+type GetDescResult {
+  desc: [GetDesc!]!
+}
+union GetDescOutput = GetDescResult | NotFoundError

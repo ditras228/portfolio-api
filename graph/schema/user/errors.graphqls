@@ -1,0 +1,7 @@
+interface ServiceErrorInterface {
+  message: String!
+}
+type NotFoundError implements ServiceErrorInterface {
+  message: String!
+  id: Int!
+}

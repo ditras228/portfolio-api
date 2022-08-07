@@ -1,0 +1,22 @@
+input UpdateDescInput {
+  id: Int!
+  text: UpdateTranslationInput!
+  img: String!
+}
+
+input CreateDescInput {
+  text: UpdateTranslationInput!
+  img: String!
+}
+
+input DeleteDescInput {
+  id: Int!
+}
+
+type DeleteDescResult {
+  id: Int!
+}
+
+union DeleteDescOutput = DeleteDescResult | NotFoundError
+union UpdateDescOutput = GetDesc | NotFoundError
+union CreateDescOutput = GetDesc
