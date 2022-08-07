@@ -36,5 +36,5 @@ VALUES
        (2, 21, 1, '<ul> <li> Loading, commenting tracks </li> <li> Grouping by playlists </li> <li> Authorization using OAuth </li> <li> Server Side Rendering </li> <li> Switching day and night themes </li> </ul>'),
 
        (3, 20, 1, 'Portfolio'),
-       (3, 21, 1, '<ul> <li> Presentation of works, section "about me" </li> <li> Admin: CRUD of all data provided on the site </li> <li> Original UI/UX design , Mobile first </li><li>Switch languages, edit translations</li></ul>')
+       (3, 21, 1, '<ul> <li> Presentation of works, section "about me" </li> <li> Admin: CRUD of all data provided on the site </li> <li> Original UI/UX design , Mobile first </li><li>Switch languages, edit translations</li></ul>');
 

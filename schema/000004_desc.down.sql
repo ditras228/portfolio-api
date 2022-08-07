@@ -1,1 +1,1 @@
-DROP TABLE public.desc
+DROP TABLE public.desc;
